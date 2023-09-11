@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task-2 Horizontal Navigation Bar</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: "Droid Sans";
+            box-sizing: border-box;
+        }
+        .main{
+            width:100%;
+            height:100vh;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+        .navbar ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background-color: #d3d3d3;
+            height: 2.5em;
+        }
+        .navbar ul li{
+            display: inline-block;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            border-right: 1px solid blue;
+            font-size: 1.7em;
+            padding: 1px 15px 10px 15px;
+        }
+        .navbar ul li a:hover{
+            transition: 0.5s;
+            color: white;
+            background-color: #808080;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="navbar">
+        <ul>
+            <li><a href="#" target="_blank" id="home_1">Home</a></li>
+            <li><a href="#" target="_blank">Java</a></li>
+            <li><a href="#" target="_blank">HTML</a></li>
+            <li><a href="#" target="_blank">CSS</a></li>
+            <li><a href="#" target="_blank">Bootstrap</a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

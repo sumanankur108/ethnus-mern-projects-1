@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms in HTML</title>
+</head>
+<body>
+<h3>Registration Form</h3>
+<form action="/action.php">
+    <h4>Login</h4>
+    <input type="email" placeholder="username">
+    <br>
+    <br>
+    <input type="password" placeholder="password">
+    <br>
+    <h4>Class</h4>
+    <article>
+        <label for="101">
+            <input type="radio" value="class XI" name="class" id="101">Class XI
+        </label>
+        <label for="102">
+            <input type="radio" value="class XII" name="class" id="102">Class XII
+        </label>
+    </article>
+    <br>
+    <h4>Favourite Subjects</h4>
+    <article>
+        <label for="math">
+            <input type="checkbox" value="math" name="subject" id="math"> Mathematics
+        </label>
+        <label for="physics">
+            <input type="checkbox" value="physics" name="subject" id="physics"> Physics
+        </label>
+        <label for="chemistry">
+            <input type="checkbox" value="chemistry" name="subject" id="chemistry"> Chemistry
+        </label>
+        <label for="computer science">
+            <input type="checkbox" value="computer science" name="subject" id="computer science"> Computer Science
+        </label>
+    </article>
+    <br>
+    <article>
+        <h4>Review</h4>
+        <label for="review">
+            <textarea rows="5" cols="20" id="review" placeholder="Write your review here" name="subject"></textarea>
+        </label>
+    </article>
+    <br>
+    <article>
+        <h4>City</h4>
+        <label for="city">
+            <select name="city" id="city">
+                <option value="Delhi">Delhi</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Chennai">Chennai</option>
+            </select>
+        </label>
+    </article>
+    <br>
+    <article>
+        <label for="sub">
+            <input type="submit" value="Enter" id="sub" name="subject">
+        </label>
+    </article>
+</form>
+</body>
+</html>

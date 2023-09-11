@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task-6</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        .loginbox{
+            height:420px;
+            width:380px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            box-sizing: border-box;
+        }
+        .avatar{
+            height:150px;
+            width:150px;
+            border-radius: 50%;
+            position: relative;
+            left: 27%;
+            top: 15px;
+            background-color: #8cc051;
+            border-style: solid;
+            border-color: #009343;
+        }
+        form{
+            margin: 15px;
+        }
+        article{
+            padding: 0;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .loginbox .user_pass input{
+            width: 98%;
+        }
+        .loginbox .user_pass input[type="submit"]{
+            margin-top: 12px;
+            padding : 7px 7px 7px 7px;
+            width: 104%;
+            background-color: #4cb050;
+            border-style: none;
+            color: white;
+        }
+        .loginbox .user_pass input[placeholder="Enter Username"],input[placeholder="Enter Password"]{
+            padding: 6px 6px 6px 6px;
+            border-color: silver;
+            border-style: solid;
+        }
+        .loginbox .rem_me{
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+        .loginbox table{
+            background-color: #f1f1f1;
+            width: 104%;
+            border-top-color: #d0d0d0;
+            border-top-style: solid;
+        }
+        .loginbox table tr td input[type=submit]{
+            background-color: #f44136;
+            color: white;
+            padding: 7px 13px 7px 13px;
+            border-style: none;
+            border-radius: 6px 6px 6px 6px;
+        }
+    </style>
+</head>
+<body>
+<div class="loginbox">
+    <img src="women_green-512.webp" class="avatar">
+    <form>
+        <div class="user_pass">
+            <article>Username</article>
+            <input type="text" placeholder="Enter Username">
+            <br>
+            <article>Password</article>
+            <input type="password" placeholder="Enter Password">
+            <br>
+            <input type="submit" value="Login">
+        </div>
+        <div class="rem_me">
+            <label for="rem">
+                <input type="checkbox" value="Remember me" id="rem">Remember me
+            </label>
+        </div>
+        <table class="cancel">
+            <tr>
+                <td>
+                    <input type="submit" value="Cancel" class="can_button">
+                </td>
+                <td align="right">
+                    <p>Forgot <a href="#" target="_blank" style="color: black">password?</a></p>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>
